@@ -1,3 +1,3 @@
-# skyscript README
+# Ecliptix
 
-SkyScript-VSCode is a extension for syntax highlighting
+This is a VSCode extension that adds language support for Ecliptix!
