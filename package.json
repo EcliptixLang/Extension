@@ -1,0 +1,30 @@
+{
+  "name": "ecliptix",
+  "displayName": "Ecliptix",
+  "description": "Ecliptix Language Support for VSCode",
+  "publisher": "webwisetech",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ecx",
+      "aliases": ["Ecliptix", "ec", "ecx"],
+      "extensions": [".ec", ".ecx"],
+	  "icon": {
+		"light": "icons/ecx-light.png",
+		"dark": "icons/ecx-dark.png"
+	  },
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ecx",
+      "scopeName": "source.ecx",
+      "path": "./syntaxes/ecx.tmLanguage.json"
+    }]
+  }
+}
