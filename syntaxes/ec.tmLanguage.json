@@ -1,0 +1,68 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Unsafe Ecliptix",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#functions"
+		}
+	],
+	"repository": {
+		"operators": {
+			"name": "keyword.operator",
+			"match": "(\\+|\\-|\\/|\\*|\\=|\\$|\\<|\\>|\\!)"
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.hash",
+					"begin": "/*",
+					"end": "*/"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword",
+					"match": "\\b(set|lock|fun|if|while|for|return|else|while|when|merge)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ss",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.integer.ecx",
+					"match": "\\b\\d+\\b"
+				}
+			]
+		},
+		"functions": {
+			"name": "entity.name.function",
+			"match": "\\b(\\w+)\\s*\\("
+		}
+	},
+	"scopeName": "source.ec"
+}

@@ -1,9 +1,9 @@
-# Change Log
+# Releases
 
-All notable changes to the "skyscript" extension will be documented in this file.
+## [0.0.2]
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Split the .ecx and .ec extensions, ec becoming 'Unsafe Ecliptix' for not having any kind of type checking/enforcment
 
-## [Unreleased]
+## [0.0.1]
 
 - Initial release
